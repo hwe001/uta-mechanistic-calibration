@@ -4,16 +4,20 @@ title: "uta-mechanistic-calibration: identifiability and calibration of a uterop
 type: software
 license: MIT
 authors:
+  - family-names: Zhang
+    given-names: Yu
+    affiliation: "Department of Ultrasound, Chongqing Health Center for Women and Children, Chongqing, China"
   - family-names: Yang
     given-names: Suying
     affiliation: "Department of Ultrasound, Chongqing Health Center for Women and Children, Chongqing, China"
   - family-names: Tang
     given-names: Jing
     affiliation: "Department of Ultrasound, Chongqing Health Center for Women and Children, Chongqing, China"
-  - family-names: Zhang
-    given-names: Yu
-    affiliation: "Department of Ultrasound, Chongqing Health Center for Women and Children, Chongqing, China"
   - family-names: Ho
     given-names: Harvey
     affiliation: "Rātā BioSim Lab, Auckland, New Zealand"
 repository-code: "https://github.com/hwe001/uta-mechanistic-calibration"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23057564
+    description: "Archived version v1.0.0 on Zenodo (the concept DOI for all versions is 10.5281/zenodo.23057563)"

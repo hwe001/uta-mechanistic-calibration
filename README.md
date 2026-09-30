@@ -1,5 +1,7 @@
 # uta-mechanistic-calibration
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23057564.svg)](https://doi.org/10.5281/zenodo.23057564)
+
 Identifiability and calibration of a uteroplacental transmission-line model against routine uterine-artery Doppler
 indices (PI, S/D). Code, solver adapter, validation and figure scripts accompanying the manuscript
 
