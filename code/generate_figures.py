@@ -82,13 +82,13 @@ def save_figure(fig: plt.Figure, output: Path, name: str) -> None:
     plt.close(fig)
 
 
-def load_inputs(results: Path, input_path: Path) -> dict:
+def load_inputs(results: Path, input_path: Path, trajectories: Path | None = None, identifiability_path: Path | None = None) -> dict:
     calibration = json.loads((results / "mechanistic_calibration" / "calibration_summary.json").read_text())
     validation = json.loads((results / "woman_level_validation" / "validation_summary.json").read_text())
-    identifiability = json.loads((results / "identifiability" / "identifiability_summary.json").read_text())
+    identifiability = json.loads((identifiability_path or (results / "identifiability" / "identifiability_summary.json")).read_text())
     return {
         "bins": pd.read_csv(results / "mechanistic_calibration" / "ga_bin_targets.csv"),
-        "trajectories": pd.read_csv(results / "mechanistic_calibration" / "latent_trajectories.csv"),
+        "trajectories": pd.read_csv(trajectories or (results / "mechanistic_calibration" / "latent_trajectories.csv")),
         "benchmark_curve": pd.read_csv(
             results / "longitudinal_benchmark" / "trajectory_predictions.csv"),
         "comparison": pd.read_csv(results / "woman_level_validation" / "model_comparison.csv"),
@@ -245,7 +245,7 @@ def figure_identifiability(data: dict, output: Path) -> None:
     ax_recovery.set_yticks(y, [labels[name] for name in order])
     ax_recovery.set_xlim(0, max(spans) * 1.45)
     ax_recovery.set_xlabel("Recovered span (fold range, high/low)")
-    ax_recovery.set_title("Synthetic inverse recovery, 3 starts")
+    ax_recovery.set_title(f"Synthetic inverse recovery, {ident.get('n_starts', 3)} starts")
     fig.tight_layout()
     save_figure(fig, output, "fig3_identifiability")
 
@@ -331,9 +331,11 @@ def main() -> None:
     parser.add_argument("--input", required=True, type=Path, help="Source workbook (read-only)")
     parser.add_argument("--results", type=Path, default=Path("results"))
     parser.add_argument("--output", type=Path, default=Path("results/figures"))
+    parser.add_argument("--trajectories", type=Path, default=None, help="Alternative latent-trajectory table (e.g. woman-level bootstrap)")
+    parser.add_argument("--identifiability", type=Path, default=None, help="Alternative identifiability summary (e.g. 20-start run)")
     args = parser.parse_args()
 
-    data = load_inputs(args.results, args.input)
+    data = load_inputs(args.results, args.input, args.trajectories, args.identifiability)
     figure_observed_vs_predicted(data, args.output)
     figure_model_comparison(data, args.output)
     figure_identifiability(data, args.output)

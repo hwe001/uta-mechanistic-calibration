@@ -107,6 +107,7 @@ def main() -> None:
         "all_reported_observables": ["PI", "RI", "SD"],
         "baseline_PI": float(y0[0]), "baseline_SD": float(y0[1]),
         "jacobian_shape": list(jac.shape),
+        "n_starts": int(args.starts),
         "jacobian_rank_numeric": int(np.linalg.matrix_rank(jac, tol=1e-10)),
         "singular_values": singular.tolist(),
         "condition_number_nonzero_subspace": float(singular[0] / singular[-1]),
