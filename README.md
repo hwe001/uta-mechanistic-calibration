@@ -10,7 +10,7 @@ indices (PI, S/D). Code, solver adapter, validation and figure scripts accompany
 
 ## What is and is not new
 
-The forward model is the solver of Clark et al. (Placenta 2018;66:74-81), included unmodified in `external/` under its
+The forward model is the solver of Clark et al. (Placenta 2018;66:74-81), included unmodified in `external/` (byte-identical to commit 3d93afe of https://github.com/VirtualPregnancy/network-wave-transmission) under its
 own Apache 2.0 licence. This repository adds the audit and validation workflow around it:
 
 | Component | Files |

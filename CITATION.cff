@@ -21,3 +21,30 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23057564
     description: "Archived version v1.0.0 on Zenodo (the concept DOI for all versions is 10.5281/zenodo.23057563)"
+references:
+  - type: software
+    title: "network-wave-transmission"
+    authors:
+      - family-names: Clark
+        given-names: Alys
+    repository-code: "https://github.com/VirtualPregnancy/network-wave-transmission"
+    license: Apache-2.0
+    commit: 3d93afea5edc4f408240f11062a83a8c2d3f678d
+    date-released: 2020-09-09
+  - type: article
+    title: "Understanding abnormal uterine artery Doppler waveforms: a novel computational model to explore potential causes within the utero-placental vasculature"
+    authors:
+      - family-names: Clark
+        given-names: Alys R.
+      - family-names: James
+        given-names: Joanna L.
+      - family-names: Stevenson
+        given-names: Geoffrey N.
+      - family-names: Collins
+        given-names: Sally L.
+    journal: Placenta
+    volume: 66
+    start: 74
+    end: 81
+    year: 2018
+    doi: 10.1016/j.placenta.2018.05.001

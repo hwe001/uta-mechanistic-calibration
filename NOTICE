@@ -7,6 +7,10 @@ transmission solver of Clark and colleagues, retained unmodified as downloaded
 and distributed under the Apache License, Version 2.0 (see the LICENSE file in
 that folder).
 
+Source: https://github.com/VirtualPregnancy/network-wave-transmission (Apache License 2.0), commit 3d93afea5edc4f408240f11062a83a8c2d3f678d
+(9 September 2020). The five files copied here (FunctionDefinitions.py, VesselDefinition.py, RUNME.py, LICENSE, README.md) are
+byte-identical to that commit.
+
 Reference: Clark AR, James JL, Stevenson GN, Collins SL. Understanding abnormal
 uterine artery Doppler waveforms: a novel computational model to explore
 potential causes within the utero-placental vasculature. Placenta.
