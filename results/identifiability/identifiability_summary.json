@@ -1,0 +1,59 @@
+{
+  "independent_observables": [
+    "PI",
+    "SD"
+  ],
+  "all_reported_observables": [
+    "PI",
+    "RI",
+    "SD"
+  ],
+  "baseline_PI": 0.5272581150200348,
+  "baseline_SD": 1.645144867805882,
+  "jacobian_shape": [
+    2,
+    6
+  ],
+  "jacobian_rank_numeric": 2,
+  "singular_values": [
+    1.519921305440292,
+    0.004124009185783698
+  ],
+  "condition_number_nonzero_subspace": 368.5542967944328,
+  "target_parameters": {
+    "radial_radius_mm": 0.22631947913582925,
+    "av_radius_mm": 0.2626694275766782,
+    "terminal_resistance": 0.8113339498728932,
+    "terminal_compliance": 1.6055464769876653e-08,
+    "youngs_modulus_pa": 834106.8945106942,
+    "heart_rate": 85.23973871088154
+  },
+  "recovery_cost_median": 3.153433209993293e-05,
+  "recovery_cost_max": 0.006450842697915396,
+  "recovery_parameter_ranges": {
+    "radial_radius_mm": [
+      0.21551961545380158,
+      0.26631148306444813
+    ],
+    "av_radius_mm": [
+      0.09487540174702658,
+      0.5111591281662959
+    ],
+    "terminal_resistance": [
+      0.41193785598504573,
+      4.062813459680848
+    ],
+    "terminal_compliance": [
+      4.7568463606354415e-09,
+      4.9201722169393795e-08
+    ],
+    "youngs_modulus_pa": [
+      645696.2229332187,
+      1107275.1061567771
+    ],
+    "heart_rate": [
+      72.48101483019859,
+      92.30769247404868
+    ]
+  }
+}

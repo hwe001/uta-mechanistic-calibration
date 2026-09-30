@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "radial_radius": {
+      "low": 0.1,
+      "high": 0.5,
+      "n": 201
+    },
+    "terminal_resistance": {
+      "low": 0.2,
+      "high": 5.0,
+      "n": 101
+    },
+    "av_radius": {
+      "low": 0.05,
+      "high": 0.8,
+      "n": 101
+    }
+  },
+  "rows": 403,
+  "runtime_seconds": null,
+  "reused_existing_file": true,
+  "interpolation_validation": {
+    "distal": {
+      "n_tests": 60,
+      "linear_mean_abs_error": 2.314283999506709e-05,
+      "linear_max_abs_error": 0.00012577203720809393,
+      "pchip_mean_abs_error": 9.028647750662182e-07,
+      "pchip_max_abs_error": 2.654012468811251e-05,
+      "within_tolerance_linear": true,
+      "within_tolerance_pchip": true,
+      "sd_rel_max_error_linear": 0.0001092909534432379,
+      "sd_rel_max_error_pchip": 2.0037676116662062e-05,
+      "sd_within_tolerance_linear": true,
+      "sd_within_tolerance_pchip": true
+    },
+    "radial": {
+      "n_tests": 60,
+      "linear_mean_abs_error": 2.012046451613144e-05,
+      "linear_max_abs_error": 0.00027487661709280076,
+      "pchip_mean_abs_error": 3.3370074143575696e-07,
+      "pchip_max_abs_error": 9.965970753311737e-06,
+      "within_tolerance_linear": true,
+      "within_tolerance_pchip": true,
+      "sd_rel_max_error_linear": 0.0003169750013677687,
+      "sd_rel_max_error_pchip": 1.3318856812879978e-05,
+      "sd_within_tolerance_linear": true,
+      "sd_within_tolerance_pchip": true
+    },
+    "shunt": {
+      "n_tests": 60,
+      "linear_mean_abs_error": 2.5875041585858108e-05,
+      "linear_max_abs_error": 0.0001973928514592549,
+      "pchip_mean_abs_error": 1.0130188585995755e-06,
+      "pchip_max_abs_error": 8.20981980059754e-06,
+      "within_tolerance_linear": true,
+      "within_tolerance_pchip": true,
+      "sd_rel_max_error_linear": 0.00017305953386387028,
+      "sd_rel_max_error_pchip": 6.3589291395012006e-06,
+      "sd_within_tolerance_linear": true,
+      "sd_within_tolerance_pchip": true
+    },
+    "cross_term": {
+      "n_combinations": 25,
+      "max_abs_nonadditivity": 0.198312628786605,
+      "note": "One-at-a-time axes are additive only to within this error; all calibration models therefore vary a single remodelling axis."
+    }
+  },
+  "pi_tolerance": 0.005,
+  "sd_relative_tolerance": 0.01
+}

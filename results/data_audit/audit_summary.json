@@ -1,0 +1,19 @@
+{
+  "source": "E:\\Google Drive\\Harvey Ho Paper\\2026\\UtA\\UtA_Doppler_Cleaned_Dataset_Anonymous.xlsx",
+  "source_sha256": "f3ef580ddeb034ae3096602fa0def011821f9fdf58e03120b32ed5629d88fa80",
+  "rows": 1250,
+  "women": 784,
+  "ga_min": 11.0,
+  "ga_max": 39.86,
+  "uta_pi_nonmissing": 1249,
+  "repeat_ge_2": 329,
+  "repeat_ge_3": 99,
+  "ri_sd_identity_within_0_02_percent": 99.52,
+  "early_lt14_n": 21,
+  "early_lt14_pi_median": 0.73,
+  "composite_exam_rows": 17,
+  "noncomposite_early_lt14_n": 4,
+  "noncomposite_early_lt14_pi_median": 0.745,
+  "core_analysis_rows": 1224,
+  "core_analysis_women": 770
+}

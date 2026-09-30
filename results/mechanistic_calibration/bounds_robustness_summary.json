@@ -1,0 +1,37 @@
+{
+  "generated_by": "code/bounds_robustness.py",
+  "early_pi_target": 1.185,
+  "fitted_radial_calibre_mm": [
+    0.117,
+    0.179
+  ],
+  "archived_baselines": {
+    "radial_radius_mm": 0.2,
+    "av_radius_mm": 0.2,
+    "terminal_resistance": 1.6
+  },
+  "axes": {
+    "radial_radius": {
+      "max_PI_scanned": 256.20275507639735,
+      "value_at_max_PI": 0.03,
+      "early_PI_reachability": "PI >= 1.185 for radial_radius in [0.03, 0.117]",
+      "n_scanned": 10,
+      "n_nonfinite_or_failed": 0
+    },
+    "terminal_resistance": {
+      "max_PI_scanned": 0.5272581150200348,
+      "value_at_max_PI": 1.6,
+      "early_PI_reachability": "never within scanned range",
+      "n_scanned": 8,
+      "n_nonfinite_or_failed": 0
+    },
+    "av_radius": {
+      "max_PI_scanned": 0.7474520344062184,
+      "value_at_max_PI": 0.05,
+      "early_PI_reachability": "never within scanned range",
+      "n_scanned": 10,
+      "n_nonfinite_or_failed": 0
+    }
+  },
+  "interpretation": "Distal-resistance remodelling cannot reach the early-pregnancy PI at any scanned resistance (structural, not bound-limited). A-V-shunt remodelling reaches it only at calibres far exceeding the radial artery itself, if at all; the manuscript text must quote the empirical threshold from this summary rather than asserting plausibility."
+}

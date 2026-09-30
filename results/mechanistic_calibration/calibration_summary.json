@@ -1,0 +1,217 @@
+{
+  "generated_by": "code/mechanistic_calibration.py",
+  "seed": 20260915,
+  "bootstrap_resamples": 400,
+  "core_bins": [
+    {
+      "ga_median": 15.29,
+      "target_PI": 1.185,
+      "n": 20
+    },
+    {
+      "ga_median": 16.86,
+      "target_PI": 1.15,
+      "n": 121
+    },
+    {
+      "ga_median": 18.43,
+      "target_PI": 1.01,
+      "n": 52
+    },
+    {
+      "ga_median": 21.29,
+      "target_PI": 0.89,
+      "n": 39
+    },
+    {
+      "ga_median": 22.86,
+      "target_PI": 0.8,
+      "n": 330
+    },
+    {
+      "ga_median": 24.43,
+      "target_PI": 0.78,
+      "n": 179
+    },
+    {
+      "ga_median": 26.43,
+      "target_PI": 0.75,
+      "n": 48
+    },
+    {
+      "ga_median": 29.0,
+      "target_PI": 0.73,
+      "n": 101
+    },
+    {
+      "ga_median": 31.0,
+      "target_PI": 0.67,
+      "n": 47
+    },
+    {
+      "ga_median": 33.0,
+      "target_PI": 0.63,
+      "n": 83
+    },
+    {
+      "ga_median": 34.86,
+      "target_PI": 0.64,
+      "n": 76
+    },
+    {
+      "ga_median": 36.86,
+      "target_PI": 0.63,
+      "n": 87
+    },
+    {
+      "ga_median": 38.71,
+      "target_PI": 0.59,
+      "n": 41
+    }
+  ],
+  "grid": {
+    "spec": {
+      "radial_radius": {
+        "low": 0.1,
+        "high": 0.5,
+        "n": 201
+      },
+      "terminal_resistance": {
+        "low": 0.2,
+        "high": 5.0,
+        "n": 101
+      },
+      "av_radius": {
+        "low": 0.05,
+        "high": 0.8,
+        "n": 101
+      }
+    },
+    "rows": 403,
+    "runtime_seconds": null,
+    "reused_existing_file": true,
+    "interpolation_validation": {
+      "distal": {
+        "n_tests": 60,
+        "linear_mean_abs_error": 2.314283999506709e-05,
+        "linear_max_abs_error": 0.00012577203720809393,
+        "pchip_mean_abs_error": 9.028647750662182e-07,
+        "pchip_max_abs_error": 2.654012468811251e-05,
+        "within_tolerance_linear": true,
+        "within_tolerance_pchip": true,
+        "sd_rel_max_error_linear": 0.0001092909534432379,
+        "sd_rel_max_error_pchip": 2.0037676116662062e-05,
+        "sd_within_tolerance_linear": true,
+        "sd_within_tolerance_pchip": true
+      },
+      "radial": {
+        "n_tests": 60,
+        "linear_mean_abs_error": 2.012046451613144e-05,
+        "linear_max_abs_error": 0.00027487661709280076,
+        "pchip_mean_abs_error": 3.3370074143575696e-07,
+        "pchip_max_abs_error": 9.965970753311737e-06,
+        "within_tolerance_linear": true,
+        "within_tolerance_pchip": true,
+        "sd_rel_max_error_linear": 0.0003169750013677687,
+        "sd_rel_max_error_pchip": 1.3318856812879978e-05,
+        "sd_within_tolerance_linear": true,
+        "sd_within_tolerance_pchip": true
+      },
+      "shunt": {
+        "n_tests": 60,
+        "linear_mean_abs_error": 2.5875041585858108e-05,
+        "linear_max_abs_error": 0.0001973928514592549,
+        "pchip_mean_abs_error": 1.0130188585995755e-06,
+        "pchip_max_abs_error": 8.20981980059754e-06,
+        "within_tolerance_linear": true,
+        "within_tolerance_pchip": true,
+        "sd_rel_max_error_linear": 0.00017305953386387028,
+        "sd_rel_max_error_pchip": 6.3589291395012006e-06,
+        "sd_within_tolerance_linear": true,
+        "sd_within_tolerance_pchip": true
+      },
+      "cross_term": {
+        "n_combinations": 25,
+        "max_abs_nonadditivity": 0.198312628786605,
+        "note": "One-at-a-time axes are additive only to within this error; all calibration models therefore vary a single remodelling axis."
+      }
+    },
+    "pi_tolerance": 0.005,
+    "sd_relative_tolerance": 0.01
+  },
+  "smooth_fits": {
+    "radial": {
+      "params_log_space": [
+        -1.715924494383218,
+        -2.302585092994045,
+        -0.20931522958485985,
+        18.797194254577658
+      ],
+      "parametrization": "log(param) = l0 + (l1-l0)/(1+exp(-k*(ga-g0)))",
+      "asymptote_at_lower_bound": [
+        false,
+        true
+      ],
+      "asymptote_at_upper_bound": [],
+      "asymptote_note": "A logistic asymptote at an admissible-range edge lies outside the observed 14-40-week window; it is not constrained by the data and does not affect fitted values over the observed range.",
+      "rmse_PI": 0.02429416580755045,
+      "mae_PI": 0.019798837306530974,
+      "rmse_logPI": 0.031912820175349875,
+      "weighted_rmse_logPI": 0.030301300806042975,
+      "sigma_logPI": 0.030301300806042975,
+      "aic_logPI_bins": -5076.028700856706,
+      "boundary_bins": 0
+    },
+    "distal": {
+      "params_log_space": [
+        0.06203533988524587,
+        0.06390467281690038,
+        0.8374651055776287,
+        29.439177483203657
+      ],
+      "parametrization": "log(param) = l0 + (l1-l0)/(1+exp(-k*(ga-g0)))",
+      "asymptote_at_lower_bound": [
+        false,
+        false
+      ],
+      "asymptote_at_upper_bound": [],
+      "asymptote_note": "A logistic asymptote at an admissible-range edge lies outside the observed 14-40-week window; it is not constrained by the data and does not affect fitted values over the observed range.",
+      "rmse_PI": 0.3324731771008934,
+      "mae_PI": 0.27204471327394586,
+      "rmse_logPI": 0.4466964292810204,
+      "weighted_rmse_logPI": 0.42721832295754997,
+      "sigma_logPI": 0.42721832295754997,
+      "aic_logPI_bins": 1401.6352009655448,
+      "boundary_bins": 13
+    },
+    "shunt": {
+      "params_log_space": [
+        -2.9957322735539904,
+        -0.22314355131420974,
+        1.9999999999999998,
+        31.296113014139046
+      ],
+      "parametrization": "log(param) = l0 + (l1-l0)/(1+exp(-k*(ga-g0)))",
+      "asymptote_at_lower_bound": [
+        true,
+        false
+      ],
+      "asymptote_at_upper_bound": [],
+      "asymptote_note": "A logistic asymptote at an admissible-range edge lies outside the observed 14-40-week window; it is not constrained by the data and does not affect fitted values over the observed range.",
+      "rmse_PI": 0.19760829141340117,
+      "mae_PI": 0.14204297140645128,
+      "rmse_logPI": 0.23509285980960337,
+      "weighted_rmse_logPI": 0.2004388583379948,
+      "sigma_logPI": 0.2004388583379948,
+      "aic_logPI_bins": -450.9767391466458,
+      "boundary_bins": 7
+    }
+  },
+  "aic_note": "AIC is computed on the bin-median targets with examination-count-weighted log-PI residuals; it is comparable across the three mechanistic models (identical targets and loss) but not against individual-level models.",
+  "environment": {
+    "python": "3.12.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "elapsed_seconds": 28.25492789997952
+}

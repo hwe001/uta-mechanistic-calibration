@@ -1,0 +1,25 @@
+{
+ "radial_radius": {
+  "n": 1201,
+  "rmse_logSD": 0.038246650175058475,
+  "bias_logSD": -0.020810609682857296,
+  "rho": 0.9926147193796483
+ },
+ "uterine_radius": {
+  "n": 1159,
+  "rmse_logSD": 0.05183708848549562,
+  "bias_logSD": -0.030893984284352666,
+  "rho": 0.9898693301701174
+ },
+ "arcuate_radius": {
+  "n": 1095,
+  "rmse_logSD": 0.0510018347146428,
+  "bias_logSD": -0.03361436681724229,
+  "rho": 0.9912433565561378
+ },
+ "empirical_quadratic_in_sample": {
+  "n": 1224,
+  "rmse_logSD": 0.029100551749114786
+ },
+ "empirical_GA_quadratic_logSD_cv_rmse": 0.21518252466821625
+}

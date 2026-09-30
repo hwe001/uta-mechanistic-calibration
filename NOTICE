@@ -1,0 +1,17 @@
+uta-mechanistic-calibration
+
+Third-party component
+---------------------
+external/network-wave-transmission-master/ contains the uterine-artery wave
+transmission solver of Clark and colleagues, retained unmodified as downloaded
+and distributed under the Apache License, Version 2.0 (see the LICENSE file in
+that folder).
+
+Reference: Clark AR, James JL, Stevenson GN, Collins SL. Understanding abnormal
+uterine artery Doppler waveforms: a novel computational model to explore
+potential causes within the utero-placental vasculature. Placenta.
+2018;66:74-81. doi:10.1016/j.placenta.2018.05.001
+
+All changes needed to run the solver with modern Python and to extract
+waveform metrics are made in a separate adapter (code/solver_adapter.py); the
+solver source itself has not been changed.

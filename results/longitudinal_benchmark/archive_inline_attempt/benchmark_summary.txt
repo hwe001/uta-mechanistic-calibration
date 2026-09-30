@@ -1,0 +1,27 @@
+           Mixed Linear Model Regression Results
+============================================================
+Model:               MixedLM  Dependent Variable:  logPI    
+No. Observations:    1228     Method:              REML     
+No. Groups:          770      Scale:               0.0381   
+Min. group size:     1        Log-Likelihood:      -142.9630
+Max. group size:     9        Converged:           Yes      
+Mean group size:     1.6                                    
+------------------------------------------------------------
+                 Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+------------------------------------------------------------
+Intercept        -0.288    0.011 -25.126 0.000 -0.310 -0.265
+ga_c             -0.033    0.001 -27.322 0.000 -0.035 -0.030
+ga2               0.002    0.000   9.915 0.000  0.001  0.002
+Group Var         0.044    0.032                            
+Group x ga_c Cov -0.001    0.001                            
+ga_c Var          0.000    0.000                            
+============================================================
+
+N=1228 women=770
+Intercept   -0.287898
+ga_c        -0.032819
+ga2          0.001625
+dtype: float64
+          Group      ga_c
+Group  0.043579 -0.000869
+ga_c  -0.000869  0.000031

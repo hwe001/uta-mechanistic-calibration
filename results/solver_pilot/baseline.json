@@ -1,0 +1,21 @@
+{
+  "SD": 1.645144867805882,
+  "RI": 0.3921507950034255,
+  "PI": 0.5272581150200348,
+  "peak_velocity_cm_s": 40.03131401369559,
+  "minimum_velocity_cm_s": 24.3330023981931,
+  "mean_velocity_cm_s": 29.773485069842856,
+  "notch_present": false,
+  "notch_ratio": null,
+  "total_resistance": 1.7231319952734703,
+  "steady_flow_ml_min": 249.00000000000003,
+  "radial_radius_mm": 0.2,
+  "av_radius_mm": 0.2,
+  "terminal_resistance": 1.6,
+  "terminal_compliance": 1e-08,
+  "uterine_radius_mm": 2.0,
+  "arcuate_radius_mm": 2.0,
+  "youngs_modulus_pa": 1500000.0,
+  "heart_rate_bpm": 72.0,
+  "n_timepoints": 84
+}

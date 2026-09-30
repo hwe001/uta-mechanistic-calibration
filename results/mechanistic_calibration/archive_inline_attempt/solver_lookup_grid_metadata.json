@@ -1,0 +1,21 @@
+{
+  "grid_points": 93,
+  "parameters": {
+    "radial_radius": [
+      0.1,
+      0.5,
+      31
+    ],
+    "terminal_resistance": [
+      0.2,
+      5.0,
+      31
+    ],
+    "av_radius": [
+      0.05,
+      0.8,
+      31
+    ]
+  },
+  "runtime_seconds": 1.7843098640441895
+}

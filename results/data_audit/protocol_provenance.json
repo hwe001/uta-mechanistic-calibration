@@ -1,0 +1,116 @@
+{
+  "generated_by": "code/protocol_provenance.py",
+  "n_rows": 1250,
+  "n_women": 784,
+  "columns": [
+    "Exam_Date",
+    "Age",
+    "GA_weeks",
+    "UtA_SD",
+    "UtA_PI",
+    "UtA_RI",
+    "UA_SD",
+    "UA_PI",
+    "UA_RI",
+    "BPD_cm",
+    "HC_cm",
+    "AC_cm",
+    "FL_cm",
+    "HL_cm",
+    "EFW_g",
+    "FHR",
+    "Exam_Type",
+    "Impression",
+    "Patient_ID"
+  ],
+  "singleton": {
+    "reports_stating_single_live_fetus": 1250,
+    "reports_mentioning_twins": 0,
+    "reports_mentioning_triplets": 0
+  },
+  "examination_types": {
+    "n_distinct_raw_labels": 12,
+    "composite_labels_semicolon_separated": 17,
+    "haemodynamic_assessment_rows": 38,
+    "explicit_maternal_uterine_artery_rows": 1,
+    "largest_types": [
+      {
+        "exam_type_raw": "{产科常规彩超检查;}",
+        "n": 576,
+        "min": 14.0,
+        "median": 30.29,
+        "max": 39.86,
+        "pi_nonmissing": 575
+      },
+      {
+        "exam_type_raw": "{胎儿系统彩超检查;}",
+        "n": 520,
+        "min": 13.0,
+        "median": 23.29,
+        "max": 27.43,
+        "pi_nonmissing": 520
+      },
+      {
+        "exam_type_raw": "{胎儿常规彩超检查(单胎);}",
+        "n": 76,
+        "min": 15.71,
+        "median": 17.78,
+        "max": 39.71,
+        "pi_nonmissing": 76
+      },
+      {
+        "exam_type_raw": "{胎儿系统性筛查+胎儿血流动力学检测;}",
+        "n": 28,
+        "min": 12.14,
+        "median": 23.07,
+        "max": 24.29,
+        "pi_nonmissing": 28
+      }
+    ]
+  },
+  "notch": {
+    "structured_field_present": false,
+    "narrative_mentions": 18,
+    "note": "no structured notch column exists in the extract; the archived solver's predicted notch outputs are not calibratable against a structured field"
+  },
+  "laterality": {
+    "left_right_uta_columns_present": true,
+    "narrative_left_mentions": 20,
+    "narrative_right_mentions": 15,
+    "note": "a single set of uterine-artery indices is recorded per examination; whether it represents the left artery, the right artery or an average is not documented in the extract"
+  },
+  "other_doppler": {
+    "umbilical_artery_columns": [
+      "UA_SD",
+      "UA_PI",
+      "UA_RI"
+    ],
+    "umbilical_pi_nonmissing": 1094,
+    "umbilical_availability_by_ga_band": {
+      "[10, 14)": 21,
+      "[14, 18)": 37,
+      "[18, 22)": 58,
+      "[22, 26)": 509,
+      "[26, 30)": 146,
+      "[30, 34)": 125,
+      "[34, 38)": 158,
+      "[38, 42)": 40
+    },
+    "mca_cpr_ductus_venosus_columns_present": false,
+    "note": "umbilical-artery indices were not used in the present analysis, which was pre-specified to the uterine-artery summaries"
+  },
+  "ga_coverage_by_type_weeks": {
+    "nt_examinations": [
+      11.0,
+      13.86
+    ],
+    "system_anomaly_scans": [
+      13.0,
+      27.43
+    ],
+    "routine_obstetric_scans": [
+      14.0,
+      39.86
+    ]
+  }
+}

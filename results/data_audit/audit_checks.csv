@@ -1,0 +1,21 @@
+check,value
+Rows,1250
+Women,784
+Women with >=2 exams,329
+Women with >=3 exams,99
+Maximum exams per woman,9
+Exact duplicate rows,0
+Rows sharing patient/date/GA key,0
+Women with recorded age span >1 year,9
+Composite rows with multiple examination dates,17
+Composite rows below 14 weeks,17
+Non-composite rows below 14 weeks,4
+Core analysis-eligible rows,1224
+Women in core analysis set,770
+Missing UtA PI,1
+RI-S/D identity error >0.02,6
+RI-S/D identity error >0.05,5
+Repeated intervals with timeline error >1 week,18
+Repeated intervals with timeline error >2 weeks,16
+GA <14 weeks,21
+GA 14-<18 weeks,142

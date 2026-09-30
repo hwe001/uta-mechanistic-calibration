@@ -1,0 +1,12 @@
+name: uteroplacental-wave-model
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - statsmodels
+  - openpyxl
+  - pytest

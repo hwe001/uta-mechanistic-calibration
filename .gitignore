@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+~$*
+# Real clinical data and examination-level outputs are never committed
+data/*
+!data/synthetic/
+!data/README.md
+results/**/validation_predictions.csv
+results/**/repeated_interval_predictions.csv
+results/**/extended_cv_predictions.csv
+results/**/flagged_records.csv

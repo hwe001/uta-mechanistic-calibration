@@ -1,0 +1,455 @@
+{
+  "generated_by": "code/woman_level_validation.py",
+  "seeds": [
+    20260915,
+    20260916,
+    20260917
+  ],
+  "scheme": "5-fold grouped cross-validation by woman, 3 repeats",
+  "split_unit": "woman",
+  "n_examinations": 1224,
+  "n_women": 770,
+  "prediction_mode": {
+    "benchmark": "fixed-effects population trajectory (unseen women)",
+    "mechanistic": "full-solver evaluation at each examination's latent parameter"
+  },
+  "model_comparison": [
+    {
+      "model": "benchmark",
+      "n_examinations": 3672,
+      "rmse_logPI": 0.2855508912331725,
+      "mae_logPI": 0.22270973701562125,
+      "rmse_PI": 0.2801144845198285,
+      "mae_PI": 0.19354433978010224,
+      "calibration_slope_logPI": 0.9685837614071794,
+      "calibration_intercept_logPI": -0.013395297032469599,
+      "calibration_degenerate": false,
+      "coverage_90pct": 0.9123093681917211,
+      "mean_sigma_logPI": 0.28766536576010904,
+      "boundary_exam_proportion": NaN
+    },
+    {
+      "model": "radial",
+      "n_examinations": 3672,
+      "rmse_logPI": 0.2861452542232677,
+      "mae_logPI": 0.2220992721203123,
+      "rmse_PI": 0.28421149155541914,
+      "mae_PI": 0.19290398440577788,
+      "calibration_slope_logPI": 1.0377468769309726,
+      "calibration_intercept_logPI": 0.028170724359630646,
+      "calibration_degenerate": false,
+      "coverage_90pct": 0.9030501089324618,
+      "mean_sigma_logPI": 0.28479806162285326,
+      "boundary_exam_proportion": 0.0
+    },
+    {
+      "model": "distal",
+      "n_examinations": 3672,
+      "rmse_logPI": 0.5274380018842785,
+      "mae_logPI": 0.42652884923440687,
+      "rmse_PI": 0.4568514980272922,
+      "mae_PI": 0.326170936130484,
+      "calibration_slope_logPI": NaN,
+      "calibration_intercept_logPI": NaN,
+      "calibration_degenerate": true,
+      "coverage_90pct": 0.7145969498910676,
+      "mean_sigma_logPI": 0.3427396017408252,
+      "boundary_exam_proportion": 0.8444989106753813
+    },
+    {
+      "model": "shunt",
+      "n_examinations": 3672,
+      "rmse_logPI": 0.34451790287101963,
+      "mae_logPI": 0.26039875100703935,
+      "rmse_PI": 0.3463173446965141,
+      "mae_PI": 0.22390840140231685,
+      "calibration_slope_logPI": 1.0343436951878278,
+      "calibration_intercept_logPI": 0.13301960706681434,
+      "calibration_degenerate": false,
+      "coverage_90pct": 0.8839869281045751,
+      "mean_sigma_logPI": 0.320920576718314,
+      "boundary_exam_proportion": 0.5751633986928104
+    }
+  ],
+  "uncertainty": {
+    "bootstrap_ci": {
+      "benchmark": {
+        "rmse_logPI": {
+          "point": 0.2855508912331725,
+          "ci_low": 0.2710398914368647,
+          "ci_high": 0.2997327163659807
+        },
+        "mae_logPI": {
+          "point": 0.22270973701562125,
+          "ci_low": 0.2111964948441379,
+          "ci_high": 0.23418808987211553
+        },
+        "coverage_90pct": {
+          "point": 0.9123093681917211,
+          "ci_low": 0.8955181113541307,
+          "ci_high": 0.9288930036688988
+        },
+        "calibration_slope_logPI": {
+          "point": 0.9685837614071794,
+          "ci_low": 0.8828428940891337,
+          "ci_high": 1.0557324036527653
+        }
+      },
+      "radial": {
+        "rmse_logPI": {
+          "point": 0.2861452542232677,
+          "ci_low": 0.2714912617577765,
+          "ci_high": 0.30074096138419665
+        },
+        "mae_logPI": {
+          "point": 0.2220992721203123,
+          "ci_low": 0.210770457676798,
+          "ci_high": 0.23363234834805732
+        },
+        "coverage_90pct": {
+          "point": 0.9030501089324618,
+          "ci_low": 0.8858266770289136,
+          "ci_high": 0.919643996297149
+        },
+        "calibration_slope_logPI": {
+          "point": 1.0377468769309726,
+          "ci_low": 0.9466912761431016,
+          "ci_high": 1.1322278172097986
+        }
+      },
+      "distal": {
+        "rmse_logPI": {
+          "point": 0.5274380018842785,
+          "ci_low": 0.5057150502102549,
+          "ci_high": 0.5482015560216382
+        },
+        "mae_logPI": {
+          "point": 0.42652884923440687,
+          "ci_low": 0.4079522190275943,
+          "ci_high": 0.4453067764436062
+        },
+        "coverage_90pct": {
+          "point": 0.7145969498910676,
+          "ci_low": 0.6882059419034423,
+          "ci_high": 0.7397340917834571
+        },
+        "calibration_slope_logPI": {
+          "point": NaN,
+          "ci_low": NaN,
+          "ci_high": NaN
+        }
+      },
+      "shunt": {
+        "rmse_logPI": {
+          "point": 0.34451790287101963,
+          "ci_low": 0.3270895579174129,
+          "ci_high": 0.36235549508746806
+        },
+        "mae_logPI": {
+          "point": 0.26039875100703935,
+          "ci_low": 0.2480178985707568,
+          "ci_high": 0.27360375827048394
+        },
+        "coverage_90pct": {
+          "point": 0.8839869281045751,
+          "ci_low": 0.8658929472451232,
+          "ci_high": 0.9024341920609462
+        },
+        "calibration_slope_logPI": {
+          "point": 1.0343436951878278,
+          "ci_low": 0.9050575554535308,
+          "ci_high": 1.170107573979067
+        }
+      }
+    },
+    "paired_rmse_differences": {
+      "radial-benchmark": {
+        "mean_diff": 0.000584219675815405,
+        "ci_low": -0.0014293341474133428,
+        "ci_high": 0.0025967531341802757
+      },
+      "radial-shunt": {
+        "mean_diff": -0.05831103013200791,
+        "ci_low": -0.0692504602383316,
+        "ci_high": -0.047493898045206116
+      },
+      "radial-distal": {
+        "mean_diff": -0.24127316449657177,
+        "ci_low": -0.2585472668042845,
+        "ci_high": -0.22266815432253578
+      }
+    },
+    "n_bootstrap": 2000,
+    "resampling_unit": "woman",
+    "fold_paired_wilcoxon": [
+      {
+        "comparison": "radial vs benchmark",
+        "n_pairs": 15,
+        "median_rmse_radial": 0.2870475558479369,
+        "median_rmse_other": 0.28455058019870655,
+        "wilcoxon_p": 0.389404296875
+      },
+      {
+        "comparison": "radial vs shunt",
+        "n_pairs": 15,
+        "median_rmse_radial": 0.2870475558479369,
+        "median_rmse_other": 0.3414297563988504,
+        "wilcoxon_p": 6.103515625e-05
+      },
+      {
+        "comparison": "radial vs distal",
+        "n_pairs": 15,
+        "median_rmse_radial": 0.2870475558479369,
+        "median_rmse_other": 0.5289576422738377,
+        "wilcoxon_p": 6.103515625e-05
+      }
+    ]
+  },
+  "boundary_fits": {
+    "note": "Boundary-pinned estimates reflect the pre-specified parameter constraints and practical non-identifiability, not a software failure. endpoint_at_range_edge = a logistic asymptote outside the observed 14-40-week window pins at the admissible-range edge (fitted values over the observed range are unaffected). trajectory_at_pi_ceiling = the predicted trajectory sits on the axis PI ceiling/floor over more than half the gestational range.",
+    "fold_level": [
+      {
+        "model": "distal",
+        "folds": 15,
+        "folds_endpoint_at_edge": 0,
+        "folds_trajectory_at_ceiling": 15,
+        "endpoint_at_edge_proportion": 0.0,
+        "trajectory_at_ceiling_proportion": 1.0
+      },
+      {
+        "model": "radial",
+        "folds": 15,
+        "folds_endpoint_at_edge": 15,
+        "folds_trajectory_at_ceiling": 0,
+        "endpoint_at_edge_proportion": 1.0,
+        "trajectory_at_ceiling_proportion": 0.0
+      },
+      {
+        "model": "shunt",
+        "folds": 15,
+        "folds_endpoint_at_edge": 15,
+        "folds_trajectory_at_ceiling": 4,
+        "endpoint_at_edge_proportion": 1.0,
+        "trajectory_at_ceiling_proportion": 0.26666666666666666
+      }
+    ]
+  },
+  "performance_by_ga_band": [
+    {
+      "model": "benchmark",
+      "GA_band": "[14, 18)",
+      "n": 423,
+      "rmse_logPI": 0.34536204939855414,
+      "bias_logPI": 0.008654338362546903
+    },
+    {
+      "model": "benchmark",
+      "GA_band": "[18, 22)",
+      "n": 273,
+      "rmse_logPI": 0.2947949747121318,
+      "bias_logPI": -0.027816442603558568
+    },
+    {
+      "model": "benchmark",
+      "GA_band": "[22, 26)",
+      "n": 1527,
+      "rmse_logPI": 0.2836261961206076,
+      "bias_logPI": -0.016522895971569574
+    },
+    {
+      "model": "benchmark",
+      "GA_band": "[26, 30)",
+      "n": 447,
+      "rmse_logPI": 0.2579689602131693,
+      "bias_logPI": 0.0337482379154896
+    },
+    {
+      "model": "benchmark",
+      "GA_band": "[30, 34)",
+      "n": 390,
+      "rmse_logPI": 0.28501735493201064,
+      "bias_logPI": -0.017314499663231606
+    },
+    {
+      "model": "benchmark",
+      "GA_band": "[34, 38)",
+      "n": 489,
+      "rmse_logPI": 0.25212763595030463,
+      "bias_logPI": 0.004681139373817158
+    },
+    {
+      "model": "benchmark",
+      "GA_band": "[38, 42)",
+      "n": 123,
+      "rmse_logPI": 0.2834607174347045,
+      "bias_logPI": -0.03956062428283083
+    },
+    {
+      "model": "radial",
+      "GA_band": "[14, 18)",
+      "n": 423,
+      "rmse_logPI": 0.3493087772352398,
+      "bias_logPI": 0.054562506666469786
+    },
+    {
+      "model": "radial",
+      "GA_band": "[18, 22)",
+      "n": 273,
+      "rmse_logPI": 0.2924875380152541,
+      "bias_logPI": 0.006667532901529392
+    },
+    {
+      "model": "radial",
+      "GA_band": "[22, 26)",
+      "n": 1527,
+      "rmse_logPI": 0.2836245505157722,
+      "bias_logPI": 0.016664363352003202
+    },
+    {
+      "model": "radial",
+      "GA_band": "[26, 30)",
+      "n": 447,
+      "rmse_logPI": 0.2607903147924018,
+      "bias_logPI": 0.05130830190384144
+    },
+    {
+      "model": "radial",
+      "GA_band": "[30, 34)",
+      "n": 390,
+      "rmse_logPI": 0.28507624820284466,
+      "bias_logPI": -0.01644337593196803
+    },
+    {
+      "model": "radial",
+      "GA_band": "[34, 38)",
+      "n": 489,
+      "rmse_logPI": 0.25232926415132306,
+      "bias_logPI": 0.008414707891186002
+    },
+    {
+      "model": "radial",
+      "GA_band": "[38, 42)",
+      "n": 123,
+      "rmse_logPI": 0.2797408103739606,
+      "bias_logPI": -0.016281134903511393
+    },
+    {
+      "model": "distal",
+      "GA_band": "[14, 18)",
+      "n": 423,
+      "rmse_logPI": 0.8816920652381433,
+      "bias_logPI": 0.8117831632212104
+    },
+    {
+      "model": "distal",
+      "GA_band": "[18, 22)",
+      "n": 273,
+      "rmse_logPI": 0.6637102442729919,
+      "bias_logPI": 0.5938316093516822
+    },
+    {
+      "model": "distal",
+      "GA_band": "[22, 26)",
+      "n": 1527,
+      "rmse_logPI": 0.5079572790999474,
+      "bias_logPI": 0.42264763426047647
+    },
+    {
+      "model": "distal",
+      "GA_band": "[26, 30)",
+      "n": 447,
+      "rmse_logPI": 0.40619615313061214,
+      "bias_logPI": 0.31539016280978016
+    },
+    {
+      "model": "distal",
+      "GA_band": "[30, 34)",
+      "n": 390,
+      "rmse_logPI": 0.34002961789034597,
+      "bias_logPI": 0.18645265482487908
+    },
+    {
+      "model": "distal",
+      "GA_band": "[34, 38)",
+      "n": 489,
+      "rmse_logPI": 0.31073257771621404,
+      "bias_logPI": 0.18266043257909664
+    },
+    {
+      "model": "distal",
+      "GA_band": "[38, 42)",
+      "n": 123,
+      "rmse_logPI": 0.31709563675890184,
+      "bias_logPI": 0.14832196653724042
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[14, 18)",
+      "n": 423,
+      "rmse_logPI": 0.5841863887587642,
+      "bias_logPI": 0.4721067107102956
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[18, 22)",
+      "n": 273,
+      "rmse_logPI": 0.39047455738905523,
+      "bias_logPI": 0.2541557323293237
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[22, 26)",
+      "n": 1527,
+      "rmse_logPI": 0.2937254985384397,
+      "bias_logPI": 0.0829801357542386
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[26, 30)",
+      "n": 447,
+      "rmse_logPI": 0.2587263138112247,
+      "bias_logPI": -0.011911683621477206
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[30, 34)",
+      "n": 390,
+      "rmse_logPI": 0.3141681730508808,
+      "bias_logPI": 0.021928342115852928
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[34, 38)",
+      "n": 489,
+      "rmse_logPI": 0.2833759396343532,
+      "bias_logPI": 0.08199543793962118
+    },
+    {
+      "model": "shunt",
+      "GA_band": "[38, 42)",
+      "n": 123,
+      "rmse_logPI": 0.29121836098255854,
+      "bias_logPI": 0.04135486686017645
+    }
+  ],
+  "repeated_intervals": {
+    "persistence_rho": 0.44772225643849345,
+    "metrics": [
+      {
+        "predictor": "population_curve",
+        "n_intervals": 33,
+        "rmse_logPI": 0.2134857220979424,
+        "mae_logPI": 0.18110519785145496,
+        "correlation_pearson": 0.5298773237658753
+      },
+      {
+        "predictor": "earlier_exam_adjusted",
+        "n_intervals": 33,
+        "rmse_logPI": 0.19369102859102894,
+        "mae_logPI": 0.16199244992855372,
+        "correlation_pearson": 0.5651940104094764
+      }
+    ]
+  },
+  "elapsed_seconds": 250.79581969999708
+}
